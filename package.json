@@ -1,0 +1,28 @@
+{
+  "name": "skynote-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "bootstrap": "node scripts/bootstrap.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "build": "pnpm -r run build && vite build",
+    "typecheck": "pnpm -r run typecheck && tsc --noEmit",
+    "test": "pnpm -r run test",
+    "verify": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "dependencies": {
+    "@skynote/editor": "workspace:*",
+    "@skynote/renderer-leafer": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "tsdown": "0.23.0",
+    "typescript": "6.0.2",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  }
+}
