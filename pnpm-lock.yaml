@@ -53,6 +53,18 @@ importers:
       '@leafer-in/color':
         specifier: 2.1.4
         version: 2.1.4(@leafer-in/interface@2.1.4(@leafer-ui/interface@2.1.4)(@leafer/interface@2.1.4))(@leafer-ui/draw@2.1.4)(@leafer-ui/interface@2.1.4)
+      '@leafer-in/interface':
+        specifier: 2.1.4
+        version: 2.1.4(@leafer-ui/interface@2.1.4)(@leafer/interface@2.1.4)
+      '@leafer-ui/draw':
+        specifier: 2.1.4
+        version: 2.1.4
+      '@leafer-ui/interface':
+        specifier: 2.1.4
+        version: 2.1.4
+      '@leafer/interface':
+        specifier: 2.1.4
+        version: 2.1.4
       '@skynote/core':
         specifier: workspace:*
         version: link:../core

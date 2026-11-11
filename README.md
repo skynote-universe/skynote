@@ -20,7 +20,11 @@ SkyNote 是一个可扩展的无限画布 SDK，也是一款可在线使用的�
 
 在线白板可以体验便签、文字、图形、连线、本地保存和导出。演练场支持编辑 JavaScript 或 TypeScript 并查看实际画布，也提供思维导图、内容表格、画笔和钢笔的免费交互体验。[在线白板](https://canvas.skynote.top/) · [示例目录](https://docs.skynote.top/examples/)
 
-接入自己的应用时，可以从 `SkyNoteEditor` 和 Leafer 渲染器开始，创建编辑器、挂载容器并插入第一个节点。首发目标是 `0.1.0-beta.1`。公开 npm 安装目前尚未开放，可以先在演练场运行示例。[快速开始](https://docs.skynote.top/guide/getting-started)
+接入自己的应用时，可以从 `SkyNoteEditor` 和 Leafer 渲染器开始，创建编辑器、挂载容器并插入第一个节点。首个公开版本为 `0.1.0-beta.1`。[快速开始](https://docs.skynote.top/guide/getting-started)
+
+```sh
+npm install @skynote/editor@beta @skynote/renderer-leafer@beta
+```
 
 ## 基础 SDK
 
@@ -35,7 +39,7 @@ SkyNote 是一个可扩展的无限画布 SDK，也是一款可在线使用的�
 
 本仓是 SDK 的开发工作区。装配脚本会按固定提交检出源码，便于跨包联调和复现问题。[SDK 提交清单](./sdk-revisions.json)
 
-需要 Git、Node.js 22.12 或更高版本，以及 pnpm 10.12.4。四个 SDK 源码仓目前需要读取权限，取得权限后即可运行以下命令。
+需要 Git、Node.js 22.12 或更高版本，以及 pnpm 10.12.4。运行以下命令从公开仓库检出四个 SDK 的固定版本。
 
 ```sh
 git clone https://github.com/skynote-universe/skynote.git
