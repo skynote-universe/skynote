@@ -28,12 +28,12 @@ npm install @skynote/editor@beta @skynote/renderer-leafer@beta
 
 ## 基础 SDK
 
-| 包 | 职责 | 文档 |
-| --- | --- | --- |
-| `@skynote/core` | 平台中立的文档模型、事务、历史和插件协议 | [Core](https://docs.skynote.top/api/core) |
-| `@skynote/editor` | 装配内核、基础插件与渲染适配器，提供面向应用的编辑器接口 | [Editor](https://docs.skynote.top/api/editor) |
-| `@skynote/plugins-basic` | 基础节点、选区、变换、吸附等通用能力 | [基础插件](https://docs.skynote.top/api/plugins-basic) |
-| `@skynote/renderer-leafer` | 基于 LeaferJS 的浏览器画布渲染和输入适配 | [Leafer 渲染器](https://docs.skynote.top/api/renderer-leafer) |
+| 包 | 职责 | 文档 | 源码 |
+| --- | --- | --- | --- |
+| `@skynote/core` | 平台中立的文档模型、事务、历史和插件协议 | [Core](https://docs.skynote.top/api/core) | [core](https://github.com/skynote-universe/core) |
+| `@skynote/editor` | 装配内核、基础插件与渲染适配器，提供面向应用的编辑器接口 | [Editor](https://docs.skynote.top/api/editor) | [editor](https://github.com/skynote-universe/editor) |
+| `@skynote/plugins-basic` | 基础节点、选区、变换、吸附等通用能力 | [基础插件](https://docs.skynote.top/api/plugins-basic) | [plugins-basic](https://github.com/skynote-universe/plugins-basic) |
+| `@skynote/renderer-leafer` | 基于 LeaferJS 的浏览器画布渲染和输入适配 | [Leafer 渲染器](https://docs.skynote.top/api/renderer-leafer) | [renderer-leafer](https://github.com/skynote-universe/renderer-leafer) |
 
 ## 从源码运行
 
@@ -51,7 +51,12 @@ pnpm dev
 
 打开 Vite 输出的地址，即可看到一张可编辑的便签。运行 `pnpm verify` 会检查类型、测试并构建工作区中的 SDK 和示例。
 
-高级插件可按各插件仓 README 中的指引检出到 `pro/`，并在此工作区运行类型检查与测试。基础 SDK 的装配命令只检出 `core/` 下的四个 SDK。
+如需开发高级插件，按对应仓库的 README 将源码检出到 `pro/`，然后在此工作区运行类型检查与测试。
+
+- [思维导图](https://github.com/skynote-universe/plugin-mindmap)
+- [内容表格](https://github.com/skynote-universe/plugin-table)
+- [画笔](https://github.com/skynote-universe/plugin-brush)
+- [钢笔](https://github.com/skynote-universe/plugin-pen)
 
 ## 参与贡献
 
