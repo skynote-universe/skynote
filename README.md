@@ -20,10 +20,10 @@ SkyNote 是一个可扩展的无限画布 SDK，也是一款可在线使用的�
 
 在线白板可以体验便签、文字、图形、连线、本地保存和导出。演练场支持编辑 JavaScript 或 TypeScript 并查看实际画布，也提供思维导图、内容表格、画笔和钢笔的免费交互体验。[在线白板](https://canvas.skynote.top/) · [示例目录](https://docs.skynote.top/examples/)
 
-接入自己的应用时，可以从 `SkyNoteEditor` 和 Leafer 渲染器开始，创建编辑器、挂载容器并插入第一个节点。首个公开版本为 `0.1.0-beta.1`。[快速开始](https://docs.skynote.top/guide/getting-started)
+接入自己的应用时，可以从 `SkyNoteEditor` 和 Leafer 渲染器开始，创建编辑器、挂载容器并插入第一个节点。[快速开始](https://docs.skynote.top/guide/getting-started)
 
 ```sh
-npm install @skynote/editor@beta @skynote/renderer-leafer@beta
+npm install @skynote/editor @skynote/renderer-leafer
 ```
 
 ## 基础 SDK
@@ -34,6 +34,17 @@ npm install @skynote/editor@beta @skynote/renderer-leafer@beta
 | `@skynote/editor` | 装配内核、基础插件与渲染适配器，提供面向应用的编辑器接口 | [Editor](https://docs.skynote.top/api/editor) | [editor](https://github.com/skynote-universe/editor) |
 | `@skynote/plugins-basic` | 基础节点、选区、变换、吸附等通用能力 | [基础插件](https://docs.skynote.top/api/plugins-basic) | [plugins-basic](https://github.com/skynote-universe/plugins-basic) |
 | `@skynote/renderer-leafer` | 基于 LeaferJS 的浏览器画布渲染和输入适配 | [Leafer 渲染器](https://docs.skynote.top/api/renderer-leafer) | [renderer-leafer](https://github.com/skynote-universe/renderer-leafer) |
+
+## 高级插件
+
+四个高级插件均已通过 npm 公开发布，统一采用 SkyNote 高级插件源码可见许可证 1.0（个人非商业用途与开发测试评估免费，生产使用与对外交付需取得书面商业授权）。
+
+| 包 | 能力 | 文档 | 源码 |
+| --- | --- | --- | --- |
+| `@skynote/plugin-mindmap` | 多向布局、分支主题、折叠与整图选区 | [思维导图](https://docs.skynote.top/plugins/mindmap) | [plugin-mindmap](https://github.com/skynote-universe/plugin-mindmap) |
+| `@skynote/plugin-table` | 富文本单元格、合并拆分、主题色与网格框线 | [内容表格](https://docs.skynote.top/plugins/table) | [plugin-table](https://github.com/skynote-universe/plugin-table) |
+| `@skynote/plugin-brush` | 固定宽度与压感自由笔迹、端点样式 | [画笔](https://docs.skynote.top/plugins/brush) | [plugin-brush](https://github.com/skynote-universe/plugin-brush) |
+| `@skynote/plugin-pen` | 贝塞尔矢量路径绘制与锚点控制柄编辑 | [钢笔](https://docs.skynote.top/plugins/pen) | [plugin-pen](https://github.com/skynote-universe/plugin-pen) |
 
 ## 从源码运行
 
@@ -64,4 +75,4 @@ pnpm dev
 
 ## 许可证
 
-本仓、四个基础 SDK 和画笔插件采用 MIT 许可证。思维导图、内容表格和钢笔采用各自仓库中的 SkyNote 高级插件源码可见许可证。四个插件均可免费在线体验。[本仓许可证](./LICENSE)
+本仓和四个基础 SDK 采用 MIT 许可证。思维导图、内容表格、画笔和钢笔统一采用各自仓库中的 SkyNote 高级插件源码可见许可证 1.0。四个插件均可免费在线体验。[本仓许可证](./LICENSE)

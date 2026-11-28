@@ -1,6 +1,6 @@
-﻿{
-    "core":  "68a11ae0880661c5948de5e4a065a64338ac3659",
-    "plugins-basic":  "70effaaf1d62f435e6d79257c787cc25e37e7359",
-    "editor":  "347cc1db78dd6056dd536c2dc9c1fd88626e4669",
-    "renderer-leafer":  "63329221aca1d9dafd69335cedaa118a8807095c"
+{
+  "core": "1b1a032962a3531527dd821c00c66d8efa8b6eb5",
+  "plugins-basic": "71f86999ebb161a1e8e2e2e6e9e1321980ce2986",
+  "editor": "b378c43972f17b2ead9eeb2901372f945426af5b",
+  "renderer-leafer": "e47f5b3a58c217db901454b5dbb978955ec80d58"
 }
